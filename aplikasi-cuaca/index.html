@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Cuaca</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Button input -->
+        <div class="form-lokasi">
+            <input type="text" id="lokasi" placeholder="Lokasi" class="animate__animated animate__fadeInLeft animate__slow"/>
+            <button id="tombol-cari" onclick="getByCity()" class="animate__animated animate__fadeInRight animate__slow">Cari</button>
+        </div>
+        <!-- Button input end -->
+
+        <!-- Cuaca utama -->
+        <div class="cuaca-utama animate__animated animate__animated animate__fadeInUp animate__slow">
+            <h1 id="kota">Purwokerto</h1>
+            <img src="image/clear.png" alt="Cuaca" id="cuaca-utama-icon" />
+            <h1 id="cuaca-utama-temp">26°C</h1>
+            <div class="cuaca-utama-info">
+                <div class="cuaca-utama-wind">
+                    <h2 id="cuaca-utama-wind">2 km/hr</h2>
+                    <p>Wind Speed</p>
+                </div>
+                <div class="cuaca-utama-humidity">
+                    <h2 id="cuaca-utama-humidity">86%</h2>
+                    <p>Humidity</p>
+                </div>
+                <div class="cuaca-utama-pressure">
+                    <h2 id="cuaca-utama-pressure">1010 hPa</h2>
+                    <p>Pressure</p>
+                </div>
+            </div>
+        </div>
+        <!-- Cuaca end -->
+
+        <!-- Cuaca mendatang -->
+        <div class="daftar-cuaca-mendatang animate__animated animate__fadeInUp animate__slow">
+            <!-- awal card 1 -->
+            <div class="card-cuaca">
+                <img src="image/clouds.png" alt="cuaca" id="cuaca-1-icon">
+                <h1 id="cuaca-1-temp" class="card-cuaca-temp">14C</h1>
+                <div class="card-cuaca-info">
+                    <div class="card-cuaca-angin">
+                        <img src="image/wind.png" alt="angin">
+                        <div>
+                            <h3 id="cuaca-1-wind">8 km/hr</h3>
+                            <p>Feels like</p>
+                        </div>
+                    </div>
+                    <div class="card-cuaca-humidity">
+                        <img src="image/humidity.png" alt="humidity">
+                        <div>
+                            <h3 id="cuaca-1-humidity">96%</h3>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- akhir card 1 -->
+
+            <!-- Card 2 -->
+            <div class="card-cuaca animate__animated animate__fadeInUp animate__slow">
+                <img src="image/clouds.png" alt="cuaca" id="cuaca-2-icon">
+                <h1 id="cuaca-2-temp" class="card-cuaca-temp">14C</h1>
+                <div class="card-cuaca-info">
+                    <div class="card-cuaca-angin">
+                        <img src="image/wind.png" alt="angin">
+                        <div>
+                            <h3 id="cuaca-2-wind">8 km/hr</h3>
+                            <p>Feels like</p>
+                        </div>
+                    </div>
+                    <div class="card-cuaca-humidity">
+                        <img src="image/humidity.png" alt="humidity">
+                        <div>
+                            <h3 id="cuaca-2-humidity">96%</h3>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 end -->
+
+            <!-- Card 3 -->
+            <div class="card-cuaca animate__animated animate__fadeInUp animate__slow">
+                <img src="image/clouds.png" alt="cuaca" id="cuaca-3-icon">
+                <h1 id="cuaca-3-temp" class="card-cuaca-temp">14C</h1>
+                <div class="card-cuaca-info">
+                    <div class="card-cuaca-angin">
+                        <img src="image/wind.png" alt="angin">
+                        <div>
+                            <h3 id="cuaca-3-wind">8 km/hr</h3>
+                            <p>Feels like</p>
+                        </div>
+                    </div>
+                    <div class="card-cuaca-humidity">
+                        <img src="image/humidity.png" alt="humidity">
+                        <div>
+                            <h3 id="cuaca-3-humidity">96%</h3>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 end -->
+
+        </div>
+        <!-- Cuaca mendatang end -->
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
